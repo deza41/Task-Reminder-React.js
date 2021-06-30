@@ -11,14 +11,13 @@ import About from './components/About'
 
 const db = firebase.database()
 const taskListRef = db.ref("taskList")
-// const newTask = taskListRef.push()
-// newTask.set({
-//   "text": "Hi Guys2",
-//   "day": "Tomorrow2",
-//   "reminder": false,
-//   "id": 1
-// })
-
+const newTask = taskListRef.push()
+newTask.set({
+  "text": "Hi Guys2",
+  "day": "Tomorrow2",
+  "reminder": false,
+  "id": 1
+})
 
 
 function App() {
@@ -69,7 +68,12 @@ function App() {
     const data = await res.json()
 
     setTasks([...taskList, data])
-
+    
+    // const id = Math.floor(Math.random() * 10000) + 1
+    // //pass opbjects in id and all tasks that have been grabbed
+    // const newTask = {id, ...task}
+    // console.log(newTask)
+    // setTasks([...taskList, newTask])
     }
 
   //delete task
