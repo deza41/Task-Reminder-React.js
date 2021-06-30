@@ -1,6 +1,6 @@
 # Task Reminder - React.js
 
-
+Checkout the live version using Supabase as the DB: https://gifted-kirch-ac5768.netlify.app/
 
 ![image](https://user-images.githubusercontent.com/15008435/123914653-f8717500-d9c2-11eb-851e-dcdc7992ce9a.png)
 
@@ -21,6 +21,8 @@ Run the following commands:
 1. **npm install**  - (will grab all required files)
 2. **npm run server** - (will run the local database)
 3. **npm start run** - (will run the application)
+
+
 
 
 
